@@ -49,40 +49,21 @@ export default function Contact() {
             </div>
             <div>
               <label
-                htmlFor="subject"
+                htmlFor="dropdown-subject"
                 className="block text-sm font-medium text-gray-300 mb-2"
               >
-                Select Subject
+                Select Subject (Dropdown)
               </label>
-              <div className="flex space-x-4">
-                <label className="inline-flex items-center">
-                  <input
-                    type="radio"
-                    name="subject"
-                    value="General Inquiry"
-                    className="form-radio h-4 w-4 text-zinc-600"
-                  />
-                  <span className="ml-2 text-gray-300">General Inquiry</span>
-                </label>
-                <label className="inline-flex items-center">
-                  <input
-                    type="radio"
-                    name="subject"
-                    value="Support"
-                    className="form-radio h-4 w-4 text-zinc-600"
-                  />
-                  <span className="ml-2 text-gray-300">Support</span>
-                </label>
-                <label className="inline-flex items-center">
-                  <input
-                    type="radio"
-                    name="subject"
-                    value="Feedback"
-                    className="form-radio h-4 w-4 text-zinc-600"
-                  />
-                  <span className="ml-2 text-gray-300">Feedback</span>
-                </label>
-              </div>
+              <select
+                id="dropdown-subject"
+                name="dropdown-subject"
+                className="w-full px-4 py-3 bg-zinc-900 text-gray-100 rounded-lg border border-zinc-700 focus:outline-none focus:ring-2 focus:ring-zinc-700 focus:border-transparent"
+              >
+                <option value="">Select an option</option>
+                <option value="General Inquiry">General Inquiry</option>
+                <option value="Support">Support</option>
+                <option value="Feedback">Feedback</option>
+              </select>
             </div>
             <div>
               <label

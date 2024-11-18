@@ -4,8 +4,8 @@ import Hero from "@/app/components/Hero";
 import About from "@/app/components/About";
 import Services from "@/app/components/Services";
 import Projects from "@/app/components/Projects";
-// import Blog from "@/app/components/Blog";
 import Contact from "@/app/components/Contact";
+import Faq from "@/app/components/Faq";
 import Footer from "@/app/components/Footer";
 
 export default function Home() {
@@ -16,7 +16,7 @@ export default function Home() {
       <About />
       <Services />
       <Projects />
-      {/* <Blog /> */}
+      <Faq />
       <Contact />
       <Footer />
     </>
