@@ -8,7 +8,7 @@ export default function About() {
       id="about"
     >
       {/* Header Section */}
-      <div className="max-w-7xl mx-auto text-center md:text-left flex flex-col md:flex-row items-center space-y-8 md:space-y-0 md:space-x-12">
+      <div className="max-w-6xl mx-auto text-center md:text-left flex flex-col md:flex-row items-center space-y-8 md:space-y-0 md:space-x-12">
         <div className="w-full md:w-3/4">
           <h2 className="text-4xl font-semibold mb-4 text-white">
             Why Choose Mezzaluna Studio
@@ -23,7 +23,7 @@ export default function About() {
       </div>
 
       {/* Why Choose Us Section */}
-      <div className="mt-16 max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+      <div className="mt-16 max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
         {reasonsToChooseUs.map((reason, index) => (
           <div
             key={index}

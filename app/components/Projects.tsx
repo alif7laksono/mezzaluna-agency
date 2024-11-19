@@ -4,7 +4,7 @@ import { projects } from "@/app/lib/projectData";
 export default function Projects() {
   return (
     <section id="projects" className="py-20 px-4 bg-zinc-950">
-      <div className="max-w-7xl mx-auto">
+      <div className="max-w-6xl mx-auto">
         {/* Section Heading */}
         <div className="flex flex-col sm:flex-row items-center justify-center mb-8">
           <h2 className="text-3xl font-bold text-white text-center sm:text-left sm:mb-0">

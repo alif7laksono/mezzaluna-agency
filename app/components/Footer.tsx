@@ -21,8 +21,8 @@ const socials = [
 
 export default function Footer() {
   return (
-    <footer className="bg-zinc-950 text-gray-400 py-6 border-t border-zinc-800">
-      <div className="max-w-6xl mx-auto px-4 text-center justify-between flex items-center">
+    <footer className="w-full bg-zinc-950 text-gray-400 py-6 border-t border-zinc-800">
+      <div className="max-w-6xl mx-auto px-4 flex justify-between items-center">
         <div>
           <p className="text-sm">
             © {new Date().getFullYear()} Mezzaluna Studio. All rights reserved.

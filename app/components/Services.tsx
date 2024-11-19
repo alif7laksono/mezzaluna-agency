@@ -12,7 +12,7 @@ const services = [
   {
     title: "WordPress Development",
     description:
-      "Custom WordPress solutions, including WooCommerce and Elementor Pro for seamless e-commerce and website designs.",
+      "Custom WordPress solutions, including WooCommerce and Elementor Pro, or Astra.",
     icon: <FaWordpress className="text-4xl text-white mb-4" />,
   },
   {
@@ -51,9 +51,9 @@ export default function Services() {
   return (
     <section
       id="services"
-      className="py-24 px-4 bg-gradient-to-t from-zinc-950 to-zinc-900 text-white"
+      className=" py-24 px-4 bg-gradient-to-t from-zinc-950 to-zinc-900 text-white"
     >
-      <div className="max-w-7xl mx-auto">
+      <div className="max-w-6xl mx-auto">
         {/* Section Heading */}
         <h2 className="text-4xl font-semibold mb-10 text-center">
           Our Services

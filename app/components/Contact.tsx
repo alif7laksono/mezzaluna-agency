@@ -6,7 +6,7 @@ export default function Contact() {
       id="contact"
       className="py-24 px-4 bg-gradient-to-t from-zinc-950 to-zinc-900 text-white"
     >
-      <div className="max-w-5xl mx-auto text-center">
+      <div className="max-w-6xl mx-auto text-center">
         {/* Section Heading */}
         <h2 className="text-4xl font-bold text-gray-100 mb-8">Get in Touch</h2>
         <p className="text-lg text-gray-400 mb-12">
