@@ -21,7 +21,7 @@ const socials = [
 
 export default function Footer() {
   return (
-    <footer className="w-full bg-zinc-950 text-gray-400 py-6 border-t border-zinc-800">
+    <footer className="w-full bg-zinc-950 text-gray-400 py-6 border-t border-zinc-800 animate-fadeIn">
       <div className="max-w-6xl mx-auto px-4 flex justify-between items-center">
         <div>
           <p className="text-sm">

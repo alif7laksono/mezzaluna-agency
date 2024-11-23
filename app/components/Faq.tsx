@@ -11,7 +11,7 @@ export default function Faq() {
   };
 
   return (
-    <section id="faq" className="bg-zinc-900 text-gray-100 py-12 px-6">
+    <section id="faq" className="bg-zinc-900 text-gray-100 py-12 px-6 animate-fadeIn">
       <div className="max-w-6xl mx-auto">
         <h2 className="text-3xl font-semibold text-center mb-8">FAQ</h2>
         <div className="space-y-4">

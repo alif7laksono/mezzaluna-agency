@@ -4,7 +4,7 @@ export default function Contact() {
   return (
     <section
       id="contact"
-      className="py-24 px-4 bg-gradient-to-t from-zinc-950 to-zinc-900 text-white"
+      className="py-24 px-4 bg-gradient-to-t from-zinc-950 to-zinc-900 text-white animate-fadeIn"
     >
       <div className="max-w-6xl mx-auto text-center">
         {/* Section Heading */}

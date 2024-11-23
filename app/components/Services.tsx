@@ -51,26 +51,23 @@ export default function Services() {
   return (
     <section
       id="services"
-      className=" py-24 px-4 bg-gradient-to-t from-zinc-950 to-zinc-900 text-white"
+      className=" py-24 px-4 bg-gradient-to-t from-zinc-950 to-zinc-900 text-white animate-fadeIn"
     >
       <div className="max-w-6xl mx-auto">
-        {/* Section Heading */}
         <h2 className="text-4xl font-semibold mb-10 text-center">
           Our Services
         </h2>
 
-        {/* Services Grid */}
         <div className="grid items-center justify-center grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
           {services.map((service, index) => (
             <div
               key={index}
               className="bg-gradient-to-t from-zinc-950 to-zinc-800 border border-gray-700 rounded-lg p-8 shadow-md hover:shadow-lg hover:from-zinc-800 hover:to-zinc-700 transition duration-300 flex flex-col items-center text-center"
             >
-              {/* Icon */}
               <div>{service.icon}</div>
-              {/* Title */}
-              <h3 className="text-2xl font-semibold mb-4">{service.title}</h3>
-              {/* Description */}
+              <h3 className="text-2xl font-semibold mb-4 capitalize">
+                {service.title}
+              </h3>
               <p className="text-gray-300">{service.description}</p>
             </div>
           ))}

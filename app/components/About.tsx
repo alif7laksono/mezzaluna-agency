@@ -4,7 +4,7 @@ import { reasonsToChooseUs } from "@/app/lib/whyUs";
 export default function About() {
   return (
     <section
-      className="py-16 px-4 bg-gradient-to-t from-zinc-900 to-zinc-950 text-white h-screen flex flex-col justify-center items-center"
+      className="py-16 px-4 bg-gradient-to-t from-zinc-900 to-zinc-950 text-white h-screen flex flex-col justify-center items-center animate-fadeIn"
       id="about"
     >
       {/* Header Section */}
