@@ -1,3 +1,4 @@
+"use client";
 import React from "react";
 import {
   FaWordpress,
@@ -7,6 +8,7 @@ import {
   FaPaintBrush,
   FaLifeRing,
 } from "react-icons/fa";
+import { useInViewAnimation } from "@/app/hooks/useInViewAnimation";
 
 const services = [
   {
@@ -48,10 +50,15 @@ const services = [
 ];
 
 export default function Services() {
+  const { ref, isVisible } = useInViewAnimation();
+
   return (
     <section
+      ref={ref}
       id="services"
-      className=" py-24 px-4 bg-gradient-to-t from-zinc-950 to-zinc-900 text-white animate-fadeIn"
+      className={`py-24 px-4 bg-gradient-to-t from-zinc-950 to-zinc-900 text-white animate-fadeIn ${
+        isVisible ? "opacity-100 animate-slideUp" : "opacity-0"
+      }`}
     >
       <div className="max-w-6xl mx-auto">
         <h2 className="text-4xl font-semibold mb-10 text-center">

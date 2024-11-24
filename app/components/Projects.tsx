@@ -1,9 +1,18 @@
+"use client";
 import React from "react";
 import { projects } from "@/app/lib/projectData";
+import { useInViewAnimation } from "@/app/hooks/useInViewAnimation";
 
 export default function Projects() {
+  const { ref, isVisible } = useInViewAnimation();
   return (
-    <section id="projects" className="py-20 px-4 bg-zinc-950 animate-fadeIn">
+    <section
+      ref={ref}
+      id="projects"
+      className={`py-20 px-4 bg-zinc-950 animate-fadeIn ${
+        isVisible ? "opacity-100 animate-slideUp" : "opacity-0"
+      }`}
+    >
       <div className="max-w-6xl mx-auto">
         {/* Section Heading */}
         <div className="flex flex-col sm:flex-row items-center justify-center mb-8">

@@ -1,4 +1,6 @@
+"use client";
 import React from "react";
+import { useInViewAnimation } from "@/app/hooks/useInViewAnimation";
 import { FaInstagram, FaEnvelope, FaTwitter } from "react-icons/fa";
 
 const socials = [
@@ -20,8 +22,14 @@ const socials = [
 ];
 
 export default function Footer() {
+  const { ref, isVisible } = useInViewAnimation();
   return (
-    <footer className="w-full bg-zinc-950 text-gray-400 py-6 border-t border-zinc-800 animate-fadeIn">
+    <footer
+      ref={ref}
+      className={`w-full bg-zinc-950 text-gray-400 py-6 border-t border-zinc-800 ${
+        isVisible ? "opacity-100 animate-slideUp" : "opacity-0"
+      }`}
+    >
       <div className="max-w-6xl mx-auto px-4 flex justify-between items-center">
         <div>
           <p className="text-sm">

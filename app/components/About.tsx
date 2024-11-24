@@ -1,11 +1,17 @@
+"use client";
 import React from "react";
 import { reasonsToChooseUs } from "@/app/lib/whyUs";
+import { useInViewAnimation } from "@/app/hooks/useInViewAnimation";
 
 export default function About() {
+  const { ref, isVisible } = useInViewAnimation();
   return (
     <section
-      className="py-16 px-4 bg-gradient-to-t from-zinc-900 to-zinc-950 text-white h-screen flex flex-col justify-center items-center animate-fadeIn"
+      ref={ref}
       id="about"
+      className={`py-16 px-4 bg-gradient-to-t from-zinc-900 to-zinc-950 text-white h-screen flex flex-col justify-center items-center transition-opacity duration-700 ease-out ${
+        isVisible ? "opacity-100 animate-slideUp" : "opacity-0"
+      }`}
     >
       {/* Header Section */}
       <div className="max-w-6xl mx-auto text-center md:text-left flex flex-col md:flex-row items-center space-y-8 md:space-y-0 md:space-x-12">

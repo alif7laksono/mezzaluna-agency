@@ -1,10 +1,17 @@
+"use client";
 import React from "react";
+import { useInViewAnimation } from "@/app/hooks/useInViewAnimation";
 
 export default function Contact() {
+  const { ref, isVisible } = useInViewAnimation();
+
   return (
     <section
+      ref={ref}
       id="contact"
-      className="py-24 px-4 bg-gradient-to-t from-zinc-950 to-zinc-900 text-white animate-fadeIn"
+      className={`py-24 px-4 bg-gradient-to-t from-zinc-950 to-zinc-900 text-white animate-fadeIn ${
+        isVisible ? "opacity-100 animate-slideUp" : "opacity-0"
+      }`}
     >
       <div className="max-w-6xl mx-auto text-center">
         {/* Section Heading */}

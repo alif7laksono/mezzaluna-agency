@@ -1,9 +1,11 @@
 "use client";
 import React, { useState } from "react";
 import { FaChevronDown, FaChevronUp } from "react-icons/fa";
+import { useInViewAnimation } from "@/app/hooks/useInViewAnimation";
 import { faqs } from "@/app/lib/faqData";
 
 export default function Faq() {
+  const { ref, isVisible } = useInViewAnimation();
   const [activeIndex, setActiveIndex] = useState<null | number>(null);
 
   const toggleFAQ = (index: number) => {
@@ -11,7 +13,13 @@ export default function Faq() {
   };
 
   return (
-    <section id="faq" className="bg-zinc-900 text-gray-100 py-12 px-6 animate-fadeIn">
+    <section
+      ref={ref}
+      id="faq"
+      className={`bg-zinc-900 text-gray-100 py-12 px-6 animate-fadeIn ${
+        isVisible ? "opacity-100 animate-slideUp" : "opacity-0"
+      }`}
+    >
       <div className="max-w-6xl mx-auto">
         <h2 className="text-3xl font-semibold text-center mb-8">FAQ</h2>
         <div className="space-y-4">
