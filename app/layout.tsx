@@ -13,13 +13,11 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" className="!scroll-smooth">
       {/* <body
         className={`${geistSans.variable} ${geistMono.variable} bg-zinc-950 text-gray-300 antialiased scroll-smooth`}
       > */}
-      <body className="scroll-smooth" suppressHydrationWarning={true}>
-        {children}
-      </body>
+      <body suppressHydrationWarning={true}>{children}</body>
     </html>
   );
 }
